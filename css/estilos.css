@@ -1,0 +1,177 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("../recursos/bacground.webp");
+}
+
+header{
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 1px;
+    padding: 3px;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 40px;
+    margin-left: 5px;
+}
+
+.header__navegacion {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #540721;
+    font-weight: bold;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../recursos/estadio-qatar.webp);
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.portada__titulo{
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.emoji{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+}
+
+.presentacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.redes__twitter{
+    height: 30px;
+}
+
+.redes__instagram{
+    height: 40px;
+}
+
+.redes__youtube{
+    height: 40px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+.lista__footer{
+    color: white;
+}
+
+
+/* fin del index */
+.avion{
+    display: flex;
+    width: 500px;
+    margin: 16px;
+}
+.avion__imagen{
+    height: 280px;
+}
+
+.entradas{
+    display: flex;
+    width: 500px;
+    margin: 16px;
+}
+.entradas__imagen{
+    height: 370px;
+}
+
+.hospedaje{
+    display: flex;
+    width: 500px;
+    margin: 16px;
+}
+.hospedaje__imagen{
+    height: 280px;
+}
+/* fin del como ir */
+.desierto__imagen {
+    height: 300px;
+}
+
+.playa__imagen {
+    height: 300px;
+}
+
+.shopping__imagen {
+    height: 300px;
+}
+
+.fanfest__imagen {
+    height: 220px;
+}
+/* fin del que hacer */
+.grupos{
+    width: 500px;
+    margin: 16px;
+}
+.grupos__imagen{
+    height: 280px;
+}
+
+.sedes{
+    width: 500px;
+    margin: 16px;
+}
+.sedes__imagen{
+    height: 380px;
+}
+
+.equipos{
+    width: 500px;
+    margin: 16px;
+}
+.equipos__imagen{
+    height: 250px;
+}
+/* fin del curiosidades */
+
+.formulario {
+    background-color: #540721;
+    padding: 5px;
+    margin: 10px;
+}
+
+.formulario__div {
+    padding: 8px;
+}
+/* fin del contactenos */
