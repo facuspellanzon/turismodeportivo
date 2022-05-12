@@ -14,15 +14,16 @@ header{
     display: flex;
     background-color: white;
     position: sticky;
-    top: 1px;
-    padding: 3px;
-    justify-content: flex-end;
+    top: 0.05rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
     justify-content: space-between;
 }
 
 .header__logo {
     height: 40px;
-    margin-left: 5px;
 }
 
 .header__navegacion {
@@ -34,7 +35,7 @@ ul {
 }
 
 li {
-    padding: 10px;
+    padding: 0.8rem;
 }
 
 a {
@@ -42,6 +43,8 @@ a {
     color: #540721;
     font-weight: bold;
 }
+
+/* Index */
 
 .portada {
     display: flex;
@@ -56,122 +59,381 @@ a {
 }
 
 .portada__titulo{
-    padding-top: 50px;
+    padding: 1rem;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .emoji{
     display: flex;
     background-color: white;
-    padding: 20px;
-}
-
-.presentacion{
-    display: flex;
-    flex-wrap: wrap;
+    padding: 1rem;
     justify-content: center;
-    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
-.redes__twitter{
-    height: 30px;
+.presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
 }
 
-.redes__instagram{
-    height: 40px;
+.presentacion__titulo {
+    align-self: center;
+    text-align: center;
 }
 
-.redes__youtube{
-    height: 40px;
+.presentacion__texto {
+    padding: 1.5rem;
+    text-align: center;
 }
 
 footer{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1.5rem;
+    align-items: baseline;
+    padding: 1rem;
 }
 
-.lista__footer{
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.lista__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactanos{
     color: white;
 }
 
-
-/* fin del index */
-.avion{
-    display: flex;
-    width: 500px;
-    margin: 16px;
-}
-.avion__imagen{
-    height: 280px;
-}
-
-.entradas{
-    display: flex;
-    width: 500px;
-    margin: 16px;
-}
-.entradas__imagen{
-    height: 370px;
-}
-
-.hospedaje{
-    display: flex;
-    width: 500px;
-    margin: 16px;
-}
-.hospedaje__imagen{
-    height: 280px;
-}
-/* fin del como ir */
-.desierto__imagen {
-    height: 300px;
+/* Como ir */
+.grid__comoIr {
+    display: grid;
+    grid-template-areas: "uno dos"
+                        "uno tres"
+                        "uno tres"
+                        "uno tres"
+                        "cuatro cinco"
+                        "seis cinco"
+                        "seis cinco"
+                        "seis cinco"
+                        "siete ocho"
+                        "siete nueve"
+                        "siete nueve"
+                        "siete nueve";
+    gap:1rem; 
+    margin-top: 1rem;
+    padding: 1rem;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px;
 }
 
-.playa__imagen {
-    height: 300px;
+.grid__uno{
+    grid-area:uno;
+    background-image: url(../recursos/avion-qatar.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-.shopping__imagen {
-    height: 300px;
+.grid__dos{
+    grid-area:dos;
+    justify-self: center;
 }
 
-.fanfest__imagen {
-    height: 220px;
-}
-/* fin del que hacer */
-.grupos{
-    width: 500px;
-    margin: 16px;
-}
-.grupos__imagen{
-    height: 280px;
+.grid__tres{
+    grid-area:tres;
+    text-align: center;
 }
 
-.sedes{
-    width: 500px;
-    margin: 16px;
-}
-.sedes__imagen{
-    height: 380px;
+.grid__cuatro{
+    grid-area:cuatro;
+    justify-self: center;
 }
 
-.equipos{
-    width: 500px;
-    margin: 16px;
+.grid__cinco{
+    grid-area:cinco;
+    background-image: url(../recursos/hinchas-argentinos.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-.equipos__imagen{
-    height: 250px;
-}
-/* fin del curiosidades */
 
-.formulario {
+.grid__seis{
+    grid-area:seis;
+    text-align: center;
+}
+
+.grid__siete{
+    grid-area:siete;
+    background-image: url(../recursos/alojamiento-qatar.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid__ocho{
+    grid-area:ocho;
+    justify-self: center;
+}
+
+.grid__nueve{
+    grid-area:nueve;
+    text-align: center;
+}
+
+/* Que hacer */
+.grid__queHacer {
+    display: grid;
+    grid-template-areas: "uno dos tres"
+                        "uno dos cuatro"
+                        "cinco seis siete"
+                        "cinco seis ocho";
+    gap:1rem; 
+    margin-top: 1rem;
+    padding: 1rem;
+    grid-template-rows: 280px 280px 280px 280px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid__cientoUno {
+    grid-area: uno;
+    background-image: url(../recursos/playa-qatar.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid__cientoDos {
+    grid-area:dos;
+    text-align: center;
+}
+
+.grid__cientoTres {
+    grid-area:tres;
+    background-image: url(../recursos/shopping-qatar.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid__cientoCuatro {
+    grid-area:cuatro;
+    text-align: center;
+}
+
+.grid__cientoCinco {
+    grid-area:cinco;
+    text-align: center;
+}
+
+.grid__cientoSeis {
+    grid-area:seis;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../recursos/fan-fest.jpg);
+    background-position: center;
+}
+
+.grid__cientoSiete {
+    grid-area:siete;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../recursos/desierto-qatar.webp);
+
+}
+
+.grid__cientoOcho {
+    grid-area:ocho;
+    text-align: center;
+}
+
+/* Curiosidades */
+
+.grid__curiosidades {
+    display: grid;
+    grid-template-areas: "uno dos"
+                        "uno tres"
+                        "uno tres"
+                        "uno tres"
+                        "cuatro cinco"
+                        "seis cinco"
+                        "seis cinco"
+                        "seis cinco"
+                        "siete ocho"
+                        "siete nueve"
+                        "siete nueve"
+                        "siete nueve";
+    gap:1rem; 
+    margin-top: 1rem;
+    padding: 1rem;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px;
+}
+
+.grid__doscientosUno{
+    grid-area:uno;
+    background-image: url(../recursos/grupos-qatar.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid__doscientosCinco{
+    grid-area:cinco;
+    background-image: url(../recursos/sedes.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid__doscientosSiete{
+    grid-area:siete;
+    background-image: url(../recursos/equipos.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Contactanos */
+
+.formulario__titulo {
+    margin: 1rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
     background-color: #540721;
-    padding: 5px;
-    margin: 10px;
 }
 
-.formulario__div {
-    padding: 8px;
+.grid__formulario {
+    display: grid;
+    grid-template-areas: "uno dos tres"
+                         "cuatro cinco seis";
+    margin: 1rem;
+    gap: 0.5rem;
+    background-color: #540721;
+    grid-template-columns: 15% 60% 15%;
+    grid-template-rows: 30px 120px;
 }
-/* fin del contactenos */
+
+.grid__trescientosUno {
+    grid-area: uno;
+    font-size: large;
+}
+
+.grid__trescientosDos {
+    grid-area: dos;
+}
+
+.grid__trescientosTres {
+    grid-area: tres;
+}
+
+.grid__trescientosCuatro {
+    grid-area: cuatro;
+    font-size: large;
+}
+
+.grid__trescientosCinco {
+    grid-area: cinco;
+}
+
+.grid__trescientosSeis {
+    grid-area: seis;
+    align-self: end;
+    padding-bottom: 0.7rem;
+}
+
+.textarea {
+    min-width: 58vw;
+    min-height: 18vh;
+}
+
+/* Media query */
+
+@media (min-width: 541px) and (max-width: 720px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+
+    .presentacion {
+        grid-template-columns: 1fr;
+    }    
+
+    .grid__comoIr {
+        grid-template-areas: "dos"
+                            "uno"
+                            "tres"
+                            "cuatro"
+                            "cinco"
+                            "seis"
+                            "ocho"
+                            "siete"
+                            "nueve";
+        grid-template-rows: 40px 200px 150px 40px 200px 150px 40px 200px 150px;
+    }    
+
+    .grid__curiosidades {
+        grid-template-areas: "dos"
+                            "uno"
+                            "tres"
+                            "cuatro"
+                            "cinco"
+                            "seis"
+                            "ocho"
+                            "siete"
+                            "nueve";
+        grid-template-rows: 40px 200px 150px 40px 200px 150px 40px 200px 150px;
+    }
+    
+    .grid__formulario {
+        grid-template-areas: "uno"
+                            "dos"
+                            "tres"
+                            "cuatro"
+                            "cinco"
+                            "seis" ;
+        grid-template-rows: max-content;
+    }
+
+    .grid__queHacer {
+        grid-template-areas: "uno"
+                            "dos"
+                            "tres"
+                            "cuatro"
+                            "seis"
+                            "cinco"
+                            "siete"
+                            "ocho";
+        grid-template-rows: auto;
+    }   
+   
+    .grid__cientoUno {
+        min-width: 380px;
+        min-height: 400px;
+    }
+
+    .grid__cientoTres {
+        min-height: 250px;
+    }
+
+    .grid__cientoSeis {
+        min-height: 400px;
+    }
+
+    .grid__cientoSiete {
+        min-height: 250px;
+    }
+
+    .grid__cientoCuatro {
+        max-height: 150px;
+    }
+}

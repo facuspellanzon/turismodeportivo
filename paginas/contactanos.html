@@ -22,40 +22,46 @@
     </header>
  
     <main>
-        <section class="formulario">
-            <h1> CONTACTANOS </h1>
-                <form method="post">
-                    <div class="formulario__div">
+        <section>
+            <h1 class="formulario__titulo"> CONTACTANOS </h1>
+                <form class="grid__formulario" method="post">
+                    <div class="grid__formularioItem grid__trescientosUno">
                         <label for="Usuario"> Usuario</label>
+                    </div>
+                    <div class="grid__formularioItem grid__trescientosDos">    
                         <input placeholder="@usuario"/>
+                    </div>
+                    <div class="grid__formularioItem grid__trescientosTres">
                         <select name="Red Social">
                             <option value="Twitter"> Twitter</option>
                             <option value="Instagram"> Instagram</option>
                         </select>
                     </div>
-                    <div class="formulario__div">
+                    <div class="grid__formularioItem grid__trescientosCuatro">
                         <label for="Usuario"> Consulta</label>
-                        <textarea>
+                    </div>
+                    <div class="grid__formularioItem grid__trescientosCinco">
+                        <textarea class="textarea">
                         </textarea>
-                        <input type="submit" value="Enviar Formulario"></input>
-                        <input type="reset" value="Limpiar Formulario"></input>
+                    </div>
+                    <div class="grid__formularioItem grid__trescientosSeis">
+                        <input class="formulario__boton" type="submit" value="Enviar Formulario"></input>
+                        <input class="formulario__boton" type="reset" value="Limpiar Formulario"></input>
                     </div>    
                 </form>
         </section>
     </main>
  
     <footer>
-        <div>
+        <div class="footer__derechos">
             <p>Todos los derechos reservados</p>
         </div>
-        <div>
-            <ul>
-                <li><a class="lista__footer" href="contactanos.html">Contactanos</a></li>
-            </ul>
+        <div class="lista__footer">
+                <p><a class="contactanos" href="contactanos.html">Contactanos</a></p>
         </div>
         <div class="redes">
             <a href="https://www.twitter.com/fifaworldcup?lang=es"><img class="redes__twitter" src="../recursos/logo-twitter.png"  alt="Twitter"/>
-            <a href="https://www.instagram.com/fifaworldcup/?hl=es"><img class="redes__instagram" src="../recursos/logo-instagram.png" alt="Instagram"/>
+            <a href="https://www.instagram.com/fifaworldcup/?hl=es"><img class="redes__instagram" src="../recursos/logo-instagram.png"  alt="Instagram"/>
             <a href="https://www.youtube.com/fifa/featured"><img class="redes__youtube" src="../recursos/logo-youtube.png"  alt="YouTube"/>            
         </div>
     </footer>
