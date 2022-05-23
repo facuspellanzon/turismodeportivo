@@ -2,6 +2,7 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
@@ -25,6 +26,11 @@ a {
     text-decoration: none;
     color: #540721;
     font-weight: bold;
+}
+
+a:hover {
+    color:grey;
+    text-decoration: underline;
 }
 
 footer{
@@ -88,53 +94,100 @@ footer{
 }
 
 .presentacion__titulo {
-    align-self: center;
     text-align: center;
+    align-self: center;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .presentacion__texto {
     padding: 1.5rem;
-    text-align: center;
 }
 
 
 /* Como ir */
-.containter {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+.grid__pasajeAereo {
+    display: grid;
+    grid-template-areas: "uno uno"
+                        "tres dos";
+    margin:2rem;
+    margin-top: 6rem;
+    gap: 0.5rem;
 }
 
-.avion__imagen {
+h2 {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.grid__uno {
+    display: flex;
+    grid-area: uno;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+}
+
+.grid__dos {
+    display: flex;
+    grid-area: dos;
+    max-width: fit-content;
+    align-items: center;
+}
+
+.grid__tres {
+    grid-area: tres;
     background-image: url(../recursos/avion-qatar.webp);
-    height: 20rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    height: 20rem;
 }
 
-.entradas__row {
-    margin-top: 4rem;
+.card-group {
+    margin: 3rem;
+}
+
+.card-title {
+    color: #540721;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card-text {
+    color: #540721;
+    font-weight: bold;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulos {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.alojamiento__parrafo {
+    display: flex;
+    margin: 2rem;
+}
+
+.entradas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
 }
 
 .entradas__imagen {
-    background-image: url(../recursos/hinchas-argentinos.webp);
     height: 20rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-.hospedaje__row {
-    margin-top: 4rem;
-}
-
-.hospedaje__imagen {
-    background-image: url(../recursos/alojamiento-qatar.webp);
-    height: 20rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.entradas__parrafo {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /* Que hacer */
@@ -186,16 +239,66 @@ footer{
 
 /* Media query */
 
+@media (min-width: 721px) and (max-width: 1000px) {
+    .presentacion {
+        grid-template-columns: 1fr;
+    }       
+    .grid__pasajeAereo {
+        display: grid;
+        grid-template-areas: "uno"
+                            "tres"
+                            "dos";
+        margin:2rem;
+        gap: 0.5rem;
+    }
+    .entradas {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .entradas__parrafo {
+        margin-top: 1rem;
+    }
+}
+
 @media (min-width: 541px) and (max-width: 720px) {
     .presentacion {
         grid-template-columns: 1fr;
     }       
+    .grid__pasajeAereo {
+        display: grid;
+        grid-template-areas: "uno"
+                            "tres"
+                            "dos";
+        margin:2rem;
+        gap: 0.5rem;
+    }
+    .entradas {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .entradas__parrafo {
+        margin-top: 1rem;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
 
     .presentacion {
         grid-template-columns: 1fr;
+    }
+    .grid__pasajeAereo {
+        display: grid;
+        grid-template-areas: "uno"
+                            "tres"
+                            "dos";
+        margin:2rem;
+        gap: 0.5rem;
     }       
-
+    .entradas {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .entradas__parrafo {
+        margin-top: 1rem;
+    }
 }
