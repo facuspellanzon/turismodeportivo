@@ -1,304 +1,230 @@
-*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-body{
-    color:white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url("../recursos/bacground.webp");
-}
-
-header{
-    background-color: white;
-    position: sticky;
-    top: 0.05rem;
-    z-index: 10;
-}
-
-li {
-    padding: 0.8rem;
-}
-
-a {
+/*color: #540721*/
+/*COLORES*/
+/*TIPO DE LETRA*/
+header {
+  background-color: white;
+  position: sticky;
+  top: 0.05rem;
+  z-index: 10; }
+  header li {
+    padding: 0.8rem; }
+  header a {
     text-decoration: none;
     color: #540721;
-    font-weight: bold;
-}
+    font-weight: bolder; }
+  header a:hover {
+    color: grey;
+    text-decoration: underline; }
 
-a:hover {
-    color:grey;
-    text-decoration: underline;
-}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1.5rem;
+  align-items: baseline;
+  padding: 1rem; }
 
-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 1.5rem;
-    align-items: baseline;
-    padding: 1rem;
-}
+.footer__redes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem; }
 
-.redes {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-}
+.footer__lista {
+  display: flex;
+  justify-content: center; }
 
-.lista__footer {
-    display: flex;
-    justify-content: center;
-}
+.footer__contactanos {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; }
 
-.contactanos{
-    color: white;
-}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
+body {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url("../recursos/bacground.webp"); }
 
 /* Index */
-
 .portada {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../recursos/estadio-qatar.webp);
-    height: 500px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-}
-
-.portada__titulo{
+  display: flex;
+  flex-direction: column;
+  background-image: url(../recursos/estadio-qatar.webp);
+  height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center; }
+  .portada__titulo {
     padding: 1rem;
     font-weight: bold;
-    font-size: 3.125rem;
-}
+    font-size: 3.125rem; }
 
-.emoji{
-    display: flex;
-    background-color: white;
-    padding: 1rem;
-    justify-content: center;
-    justify-content: space-around;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
+.emoji {
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
 
 .presentacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 3rem;
-}
-
-.presentacion__titulo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem; }
+  .presentacion__titulo {
     text-align: center;
     align-self: center;
     font-style: italic;
-    text-decoration: underline;
-}
-
-.presentacion__texto {
-    padding: 1.5rem;
-}
-
+    text-decoration: underline; }
+  .presentacion__texto {
+    padding: 1.5rem; }
 
 /* Como ir */
-.grid__pasajeAereo {
-    display: grid;
-    grid-template-areas: "uno uno"
-                        "tres dos";
-    margin:2rem;
-    margin-top: 6rem;
-    gap: 0.5rem;
-}
-
 h2 {
-    font-style: italic;
-    text-decoration: underline;
-}
+  font-style: italic;
+  text-decoration: underline; }
 
-.grid__uno {
+.titulos {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem; }
+
+.pasajes {
+  display: grid;
+  grid-template-areas: "uno uno" "tres dos";
+  margin: 2rem;
+  margin-top: 2rem;
+  gap: 0.5rem; }
+  .pasajes__uno {
     display: flex;
     grid-area: uno;
     justify-content: center;
-
-    margin-bottom: 2rem;
-}
-
-.grid__dos {
+    margin-bottom: 2rem; }
+  .pasajes__dos {
     display: flex;
     grid-area: dos;
     max-width: fit-content;
-    align-items: center;
-}
-
-.grid__tres {
+    align-items: center; }
+  .pasajes__tres {
     grid-area: tres;
     background-image: url(../recursos/avion-qatar.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 20rem;
-}
+    height: 20rem; }
 
 .card-group {
-    margin: 3rem;
-}
+  margin: 2rem; }
 
 .card-title {
-    color: #540721;
-    font-weight: bold;
-    text-decoration: underline;
-}
+  color: #540721;
+  font-weight: bold;
+  text-decoration: underline; }
 
 .card-text {
-    color: #540721;
-    font-weight: bold;
-}
+  color: #540721;
+  font-weight: bold; }
 
 .card-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.titulos {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-}
+  display: flex;
+  justify-content: space-between; }
 
 .alojamiento__parrafo {
-    display: flex;
-    margin: 2rem;
-}
+  display: flex;
+  margin: 2rem; }
 
 .entradas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 2rem;
-}
-
-.entradas__imagen {
-    height: 20rem;
-}
-
-.entradas__parrafo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem; }
+  .entradas__imagen {
+    height: 20rem; }
+  .entradas__parrafo {
     margin-left: 1rem;
-    margin-right: 1rem;
-}
+    margin-right: 1rem; }
 
 /* Que hacer */
 .carousel__queHacer {
-    margin-top: 5px;
-}
+  margin-top: 5px; }
 
 /* Curiosidades */
 .grupos__imagen {
-    background-image: url(../recursos/grupos-qatar.webp);
-    height: 20rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+  margin-top: 2rem;
+  background-image: url(../recursos/grupos-qatar.webp);
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
 
-.sedes__row {
-    margin-top: 4rem;
-}
-
-.sedes__imagen {
+.sedes {
+  margin-top: 4rem;
+  margin-left: 2rem; }
+  .sedes__imagen {
     background-image: url(../recursos/sedes.jpg);
     height: 20rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-}
+    background-position: center; }
 
-.equipos__row {
-    margin-top: 4rem;
-}
-
-.equipos__imagen {
+.equipos {
+  margin-top: 4rem; }
+  .equipos__imagen {
     background-image: url(../recursos/equipos.webp);
     height: 20rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-}
-
+    background-position: center; }
 
 /* Contactanos */
-
 .formulario {
-    margin-top: 2rem;
-    padding: 1rem;
-}
+  margin-top: 2rem;
+  padding: 1rem; }
 
-
-/* Media query */
-
+/*Media Queries*/
 @media (min-width: 721px) and (max-width: 1000px) {
-    .presentacion {
-        grid-template-columns: 1fr;
-    }       
-    .grid__pasajeAereo {
-        display: grid;
-        grid-template-areas: "uno"
-                            "tres"
-                            "dos";
-        margin:2rem;
-        gap: 0.5rem;
-    }
-    .entradas {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  .presentacion {
+    grid-template-columns: 1fr; }
+  .pasajes {
+    display: grid;
+    grid-template-areas: "uno" "tres" "dos";
+    margin: 2rem;
+    gap: 0.5rem; }
+  .entradas {
+    display: grid;
+    grid-template-columns: 1fr; }
     .entradas__parrafo {
-        margin-top: 1rem;
-    }
-}
+      margin-top: 1rem; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
-    .presentacion {
-        grid-template-columns: 1fr;
-    }       
-    .grid__pasajeAereo {
-        display: grid;
-        grid-template-areas: "uno"
-                            "tres"
-                            "dos";
-        margin:2rem;
-        gap: 0.5rem;
-    }
-    .entradas {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  .presentacion {
+    grid-template-columns: 1fr; }
+  .pasajes {
+    display: grid;
+    grid-template-areas: "uno" "tres" "dos";
+    margin: 2rem;
+    gap: 0.5rem; }
+  .entradas {
+    display: grid;
+    grid-template-columns: 1fr; }
     .entradas__parrafo {
-        margin-top: 1rem;
-    }
-}
+      margin-top: 1rem; } }
 
 @media (min-width: 320px) and (max-width: 540px) {
-
-    .presentacion {
-        grid-template-columns: 1fr;
-    }
-    .grid__pasajeAereo {
-        display: grid;
-        grid-template-areas: "uno"
-                            "tres"
-                            "dos";
-        margin:2rem;
-        gap: 0.5rem;
-    }       
-    .entradas {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  .presentacion {
+    grid-template-columns: 1fr; }
+  .pasajes {
+    display: grid;
+    grid-template-areas: "uno" "tres" "dos";
+    margin: 2rem;
+    gap: 0.5rem; }
+  .entradas {
+    display: grid;
+    grid-template-columns: 1fr; }
     .entradas__parrafo {
-        margin-top: 1rem;
-    }
-}
+      margin-top: 1rem; } }

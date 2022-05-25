@@ -1,0 +1,22 @@
+header{
+    background-color: $color-secundario;
+    position: sticky;
+    top: 0.05rem;
+    z-index: 10;
+    li {
+    padding: 0.8rem;
+    }
+    a {
+    text-decoration: none;
+    color: $color-principal;
+    font-weight:bolder;
+    }
+        a:hover {
+        color:grey;
+        text-decoration: underline;
+        }
+    
+}
+
+
+
