@@ -1,0 +1,23 @@
+.footer{
+    &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1.5rem;
+    align-items: baseline;
+    padding: 1rem;
+}
+    &__redes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+    &__lista {
+    display: flex;
+    justify-content: center;
+}
+    &__contactanos{
+    color: $color-secundario;
+    text-decoration: none;
+    font-weight: bold;
+}
+}
