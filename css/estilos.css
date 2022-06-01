@@ -52,7 +52,7 @@ body {
 .portada {
   display: flex;
   flex-direction: column;
-  background-image: url(../recursos/estadio-qatar.webp);
+  background-image: url(../recursos/estadio-qatar.jpg);
   height: 500px;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -61,8 +61,7 @@ body {
   align-items: center; }
   .portada__titulo {
     padding: 1rem;
-    font-weight: bold;
-    font-size: 3.125rem; }
+    font-weight: bold; }
 
 .emoji {
   display: flex;
@@ -79,17 +78,25 @@ body {
   margin-top: 3rem; }
   .presentacion__titulo {
     text-align: center;
-    align-self: center;
-    font-style: italic;
-    text-decoration: underline; }
+    align-self: center; }
   .presentacion__texto {
     padding: 1.5rem; }
 
-/* Como ir */
-h2 {
+h1 {
+  font-size: 3.125rem;
+  text-decoration: underline;
   font-style: italic;
-  text-decoration: underline; }
+  font-weight: bold;
+  color: white; }
 
+h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  color: white; }
+
+/* Como ir */
 .titulos {
   display: flex;
   justify-content: center;
@@ -119,13 +126,12 @@ h2 {
     background-position: center;
     height: 20rem; }
 
-.card-group {
-  margin: 2rem; }
-
 .card-title {
   color: #540721;
-  font-weight: bold;
-  text-decoration: underline; }
+  font-weight: bolder; }
+
+.card-group {
+  margin: 2rem; }
 
 .card-text {
   color: #540721;
