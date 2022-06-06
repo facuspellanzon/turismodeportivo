@@ -41,36 +41,53 @@
     </header>
 
     <main class="formulario">
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Nombre</span>
-            <input type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-          
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
-        </div>
-
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Ciudad de origen</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-
-        <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01">Tipo de viaje</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Elegir...</option>
-              <option value="1">Economico</option>
-              <option value="2">Normal</option>
-              <option value="3">Lujoso</option>
-              <option value="3">Recibir varias opciones</option>
-            </select>
-        </div>
-
-        <div class="input-group">
-            <span class="input-group-text">Consulta</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-          </div>
+        <section>
+            <h1>Contactanos</h1>
+            <p class="formulario__parrafo">Si estás con intenciones de viajar pero tenes alguna dificultad para encontrar pasajes de avión, hospedaje, tenes alguna duda o consulta, no dudes en contactarnos. <br>
+            <br>
+            Con mucho gusto te ayudaremos!</p>
+        </section>
+        <form>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Nombre</span>
+                <input type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Ciudad de origen</span>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Tipo de viaje</label>
+                <select class="form-select" id="inputGroupSelect01">
+                <option selected>Elegir...</option>
+                <option value="1">Solitario</option>
+                <option value="2">En pareja</option>
+                <option value="3">En familia</option>
+                <option value="3">Con amigos</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Presupuesto</label>
+                <select class="form-select" id="inputGroupSelect01">
+                <option selected>Elegir...</option>
+                <option value="1">Economico</option>
+                <option value="2">Normal</option>
+                <option value="3">Lujoso</option>
+                <option value="3">Recibir varias opciones</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Consulta</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <div class="formulario__boton d-grid gap-2">
+                <button type="submit" class="btn btn-light">Enviar</button>
+            </div>
+        </form>
     </main>
  
     <footer class="footer__grid">

@@ -1,8 +1,7 @@
-/*color: #540721*/
 /*COLORES*/
 /*TIPO DE LETRA*/
 header {
-  background-color: white;
+  background-color: #eae5e4;
   position: sticky;
   top: 0.05rem;
   z-index: 10; }
@@ -13,15 +12,20 @@ header {
     color: #540721;
     font-weight: bolder; }
   header a:hover {
-    color: grey;
+    color: #a3a09f;
     text-decoration: underline; }
 
 .footer__grid {
+  color: #540721;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1.5rem;
   align-items: baseline;
-  padding: 1rem; }
+  padding: 1rem;
+  background-color: #eae5e4;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
+  font-weight: bolder; }
 
 .footer__redes {
   display: flex;
@@ -33,9 +37,9 @@ header {
   justify-content: center; }
 
 .footer__contactanos {
-  color: white;
+  color: #540721;
   text-decoration: none;
-  font-weight: bold; }
+  font-weight: bolder; }
 
 * {
   margin: 0px;
@@ -44,8 +48,8 @@ header {
   overflow-x: hidden; }
 
 body {
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #eae5e4;
+  font-family: Tahoma;
   background-image: url("../recursos/bacground.webp"); }
 
 /* Index */
@@ -65,7 +69,7 @@ body {
 
 .emoji {
   display: flex;
-  background-color: white;
+  background-color: #eae5e4;
   padding: 1rem;
   justify-content: center;
   justify-content: space-around;
@@ -87,21 +91,22 @@ h1 {
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
-  color: white; }
+  color: #eae5e4;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; }
 
 h2 {
   font-size: 2rem;
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
-  color: white; }
+  color: #eae5e4;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; }
 
 /* Como ir */
-.titulos {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem; }
-
 .pasajes {
   display: grid;
   grid-template-areas: "uno uno" "tres dos";
@@ -145,6 +150,9 @@ h2 {
   display: flex;
   margin: 2rem; }
 
+.seccion__comoIr {
+  margin-top: 4rem; }
+
 .entradas {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -159,38 +167,83 @@ h2 {
 .carousel__queHacer {
   margin-top: 5px; }
 
-/* Curiosidades */
-.grupos__imagen {
-  margin-top: 2rem;
-  background-image: url(../recursos/grupos-qatar.webp);
-  height: 20rem;
+.playa {
+  margin-top: 3rem;
+  background-image: url(../recursos/playa-fondo.jpeg);
+  height: 500px;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; }
+  background-size: cover;
+  background-position: center;
+  align-items: center; }
+
+/* Curiosidades */
+.alcohol {
+  margin-top: 4rem;
+  margin-left: 2rem; }
+  .alcohol__titulo {
+    padding-bottom: 1rem; }
+  .alcohol__imagen {
+    background-image: url(../recursos/alcohol.webp);
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .alcohol__parrafo {
+    margin-right: 2rem; }
+
+.diciembre {
+  margin-top: 4rem;
+  margin-left: 2rem; }
+  .diciembre__titulo {
+    padding-bottom: 1rem; }
+  .diciembre__imagen {
+    background-image: url(../recursos/mundial-en-verano.webp);
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .diciembre__parrafo {
+    margin-right: 2rem; }
 
 .sedes {
   margin-top: 4rem;
   margin-left: 2rem; }
+  .sedes__titulo {
+    padding-bottom: 1rem; }
   .sedes__imagen {
     background-image: url(../recursos/sedes.jpg);
     height: 20rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
+  .sedes__parrafo {
+    margin-right: 2rem; }
 
-.equipos {
-  margin-top: 4rem; }
-  .equipos__imagen {
-    background-image: url(../recursos/equipos.webp);
+.carbono {
+  margin-top: 4rem;
+  margin-left: 2rem; }
+  .carbono__titulo {
+    padding-bottom: 1rem; }
+  .carbono__imagen {
+    padding-top: 2rem;
+    background-image: url(../recursos/emisiones-carbono-qatar.webp);
     height: 20rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
+  .carbono__parrafo {
+    margin-right: 2rem; }
 
 /* Contactanos */
 .formulario {
   margin-top: 2rem;
   padding: 1rem; }
+  .formulario__parrafo {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .formulario__boton {
+    margin-top: 1rem; }
 
 /*Media Queries*/
 @media (min-width: 721px) and (max-width: 1000px) {

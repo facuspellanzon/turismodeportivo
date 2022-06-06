@@ -65,19 +65,13 @@ $sizes: (h1:3.125rem, h2:2rem,);
         font-style: italic;
         font-weight: bold;
         color: $color-secundario;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
     }
 }
 
 /* Como ir */
-
-
-.titulos {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-}
-
-
 .pasajes {
     display: grid;
     grid-template-areas: "uno uno"
@@ -130,6 +124,10 @@ $sizes: (h1:3.125rem, h2:2rem,);
     margin: 2rem;
 }
 
+.seccion__comoIr {
+    margin-top: 4rem;
+}
+
 .entradas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,24 +141,67 @@ $sizes: (h1:3.125rem, h2:2rem,);
     }
 }
 
+
 /* Que hacer */
 .carousel__queHacer {
     margin-top: 5px;
 }
 
+.playa {
+    margin-top: 3rem;
+    background-image: url(../recursos/playa-fondo.jpeg);
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+
 /* Curiosidades */
-.grupos__imagen {
-    margin-top: 2rem;
-    background-image: url(../recursos/grupos-qatar.webp);
+.alcohol {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    &__titulo {
+        padding-bottom: 1rem;
+    }
+    &__imagen {
+    background-image: url(../recursos/alcohol.webp);
     height: 20rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    }
+    &__parrafo {
+        margin-right: 2rem
+    }
+}
+
+.diciembre {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    &__titulo {
+        padding-bottom: 1rem;
+    }
+    &__imagen {
+    background-image: url(../recursos/mundial-en-verano.webp);
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    }
+    &__parrafo {
+        margin-right: 2rem
+    }
 }
 
 .sedes {
     margin-top: 4rem;
     margin-left: 2rem;
+    &__titulo {
+        padding-bottom: 1rem;
+    }
     &__imagen {
     background-image: url(../recursos/sedes.jpg);
     height: 20rem;
@@ -168,24 +209,41 @@ $sizes: (h1:3.125rem, h2:2rem,);
     background-size: contain;
     background-position: center;
     }
+    &__parrafo {
+        margin-right: 2rem
+    }
 }
 
-.equipos {
+.carbono {
     margin-top: 4rem;
+    margin-left: 2rem;
+    &__titulo {
+        padding-bottom: 1rem;
+    }
     &__imagen {
-    background-image: url(../recursos/equipos.webp);
+        padding-top: 2rem;
+    background-image: url(../recursos/emisiones-carbono-qatar.webp);
     height: 20rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     }
+    &__parrafo {
+        margin-right: 2rem
+    }
 }
 
 /* Contactanos */
-
 .formulario {
     margin-top: 2rem;
     padding: 1rem;
+    &__parrafo {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    } 
+    &__boton {
+    margin-top: 1rem;
+    }
 }
 
 /*Media Queries*/
