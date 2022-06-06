@@ -1,23 +1,28 @@
 .footer{
     &__grid {
+    color: $color-principal;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 1.5rem;
     align-items: baseline;
     padding: 1rem;
-}
+    background-color: $color-secundario;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
+    font-weight: bolder;
+    }
     &__redes {
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
-}
+    }
     &__lista {
     display: flex;
     justify-content: center;
-}
-    &__contactanos{
-    color: $color-secundario;
+    }
+    &__contactanos {
+    color: $color-principal;
     text-decoration: none;
-    font-weight: bold;
-}
+    font-weight: bolder;
+    }
 }
