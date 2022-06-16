@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="mundial qatar viajes, paquetes para ir al mundial de qatar 2022, ir al mundial de qatar, entradas para el mundial qatar, entradas para el mundial qatar 2022, paquetes para ir al mundial, alojamiento doha, hostal qatar">
+    <meta name="description" content="Si estás con intenciones de viajar pero tenes alguna dificultad para encontrar pasajes de avión, hospedaje, tenes alguna duda o consulta, no dudes en contactarnos. Con mucho gusto te ayudaremos.">
     <link rel="shortcut icon" href="../recursos/favicon-16x16.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Turismo Deportivo</title>
+    <title>Contactanos - Turismo Deportivo</title>
 </head>
 <body>
-    <header>
+<!-- HEADER -->
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html">
-                    <img src="../recursos/logo-pagina.png" alt="logo-pagina" width="40" height="40">
+                    <img class="header__logo" src="../recursos/logo-pagina.png" alt="logo-pagina">
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,7 +35,7 @@
                         <a href="que-hacer.html">Que Hacer</a>
                         </li>
                         <li class="nav-item">
-                        <a href="curiosidades.html">Curiosidades</a>
+                        <a href="equipos.html">Equipos</a>
                         </li>
                     </ul>
                 </div>
@@ -40,56 +43,74 @@
           </nav>
     </header>
 
-    <main class="formulario">
-        <section>
-            <h1>Contactanos</h1>
-            <p class="formulario__parrafo">Si estás con intenciones de viajar pero tenes alguna dificultad para encontrar pasajes de avión, hospedaje, tenes alguna duda o consulta, no dudes en contactarnos. <br>
-            <br>
-            Con mucho gusto te ayudaremos!</p>
+    <main>
+<!-- Formulario de contacto -->
+        <section class="formulario">
+            <h1 class="formulario__titulo">Contactanos</h1>
+            <div class="formulario__contenedor">
+                <div class="formulario__datos">
+<!-- Introduccion -->
+                    <div>
+                        <p class="formulario__descipcion"> Si estás con intenciones de viajar pero tenes alguna dificultad para encontrar pasajes de avión, hospedaje, tenes alguna duda o consulta, no dudes en contactarnos. <br>
+                        <br>
+                        Con mucho gusto te ayudaremos! </p>
+                    </div>
+                    <form>
+<!-- Nombre -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+<!-- Email -->
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
+                        </div>
+<!-- Origen -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Ciudad de origen</span>
+                            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+<!-- Tipo de viaje -->
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Tipo de viaje</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Elegir...</option>
+                            <option value="1">Solitario</option>
+                            <option value="2">En pareja</option>
+                            <option value="3">En familia</option>
+                            <option value="3">Con amigos</option>
+                            </select>
+                        </div>
+<!-- Presupuesto -->
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Presupuesto</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Elegir...</option>
+                            <option value="1">Economico</option>
+                            <option value="2">Normal</option>
+                            <option value="3">Lujoso</option>
+                            <option value="3">Recibir varias opciones</option>
+                            </select>
+                        </div>
+<!-- Consulta -->
+                        <div>
+                            <div class="input-group">
+                                <span class="input-group-text">Consulta</span>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+<!-- Boton -->
+                            <div class="formulario__boton">
+                                <button type="submit" class="btn btn-light">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
-        <form>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Nombre</span>
-                <input type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Ciudad de origen</span>
-                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01">Tipo de viaje</label>
-                <select class="form-select" id="inputGroupSelect01">
-                <option selected>Elegir...</option>
-                <option value="1">Solitario</option>
-                <option value="2">En pareja</option>
-                <option value="3">En familia</option>
-                <option value="3">Con amigos</option>
-                </select>
-            </div>
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01">Presupuesto</label>
-                <select class="form-select" id="inputGroupSelect01">
-                <option selected>Elegir...</option>
-                <option value="1">Economico</option>
-                <option value="2">Normal</option>
-                <option value="3">Lujoso</option>
-                <option value="3">Recibir varias opciones</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <span class="input-group-text">Consulta</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-            <div class="formulario__boton d-grid gap-2">
-                <button type="submit" class="btn btn-light">Enviar</button>
-            </div>
-        </form>
     </main>
- 
+
+ <!-- FOOTER -->
     <footer class="footer__grid">
         <div class="footer__derechos">
             <p>Todos los derechos reservados</p>

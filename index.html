@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Turismo Deportivo</title>
 </head>
-
+ 
 <body>
-    <header>
+<!-- HEADER -->
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                    <img src="recursos/logo-pagina.png" alt="logo-pagina" width="40" height="40">
+                    <a class="navbar-brand" href="index.html">
+                    <img class="header__logo" src="recursos/logo-pagina.png" alt="logo-pagina">
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +36,7 @@
                         <a href="paginas/que-hacer.html">Que Hacer</a>
                         </li>
                         <li class="nav-item">
-                        <a href="paginas/curiosidades.html">Curiosidades</a>
+                        <a href="paginas/equipos.html">Equipos</a>
                         </li>
                     </ul>
                 </div>
@@ -44,14 +45,17 @@
     </header>
 
     <main>
+<!-- Foto de fondo con título -->
         <section class="portada">
             <h1 class="portada__titulo">Destino Qatar 2022</h1>
         </section>
+<!-- Emojis minimalistas -->
         <section class="emoji">
-            <img class="emoji__avion" src="recursos/emoji_avion.png" alt="avion"/>
-            <img class="emoji__ticket" src="recursos/emoji_ticket.png" alt="ticket"/>
-            <img class="emoji__atracciones" src="recursos/emoji_atracciones.png" alt="atracciones"/>
+            <img src="recursos/emoji_avion.png" alt="avion"/>
+            <img src="recursos/emoji_ticket.png" alt="entradas"/>
+            <img src="recursos/emoji_atracciones.png" alt="atracciones"/>
         </section> 
+<!-- Presentacion de la página -->
         <section class="presentacion">
             <div class="presentacion__titulo" data-aos="fade-right">
                 <h2 >¿Quienes Somos?</h2>
@@ -64,7 +68,7 @@
         </section>
     </main>
   
-
+<!-- FOOTER -->
     <footer class="footer__grid">
         <div class="footer__derechos">
             <p>Todos los derechos reservados</p>
