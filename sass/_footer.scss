@@ -3,10 +3,10 @@
     color: $color-principal;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 1.5rem;
     align-items: baseline;
     padding: 1rem;
     background-color: $color-secundario;
+    margin-top: 0.1rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.1rem;
     font-weight: bolder;
@@ -19,6 +19,15 @@
     &__lista {
     display: flex;
     justify-content: center;
+    a {
+        text-decoration: none;
+        color: $color-principal;
+        font-weight:bolder;
+        }
+            a:hover {
+            color:$color-terciario;
+            transition: .5s cubic-bezier(0, 0, 0, 1);
+            }
     }
     &__contactanos {
     color: $color-principal;

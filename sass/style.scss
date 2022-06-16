@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'equipos';
+@import 'lugares';
+
 
 *{
     margin:0px;
@@ -17,7 +20,6 @@ body{
 
 
 /* Index */
-
 .portada {
     display: flex;
     flex-direction: column;
@@ -60,16 +62,17 @@ body{
 $sizes: (h1:3.125rem, h2:2rem,);
 @each $titulo, $size in $sizes {
     #{$titulo}{
-        font-size: #{$size};
-        text-decoration: underline;
-        font-style: italic;
-        font-weight: bold;
-        color: $color-secundario;
-        margin-top: 1rem;
-        display: flex;
-        justify-content: center;
+    font-size: 3.125rem;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    color: $color-secundario;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
     }
 }
+
 
 /* Como ir */
 .pasajes {
@@ -129,11 +132,21 @@ $sizes: (h1:3.125rem, h2:2rem,);
 }
 
 .entradas {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    background-color: $color-secundario;
+    color: $color-principal;
+    &__titulo {
+        color: $color-principal;
+    }
+    &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2rem;
+    }
     &__imagen {
     height: 20rem;
+    border-radius: 1rem 1rem 1rem 1rem;
     }
     &__parrafo {
     margin-left: 1rem;
@@ -143,8 +156,12 @@ $sizes: (h1:3.125rem, h2:2rem,);
 
 
 /* Que hacer */
-.carousel__queHacer {
-    margin-top: 5px;
+
+.turismo {
+    padding-top: 1rem;
+    &__texto {
+        padding: 2rem;
+    }
 }
 
 .playa {
@@ -159,96 +176,50 @@ $sizes: (h1:3.125rem, h2:2rem,);
 }
 
 
-/* Curiosidades */
-.alcohol {
-    margin-top: 4rem;
-    margin-left: 2rem;
-    &__titulo {
-        padding-bottom: 1rem;
-    }
-    &__imagen {
-    background-image: url(../recursos/alcohol.webp);
-    height: 20rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    }
-    &__parrafo {
-        margin-right: 2rem
-    }
+
+/* Equipos */
+
+.container__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.diciembre {
-    margin-top: 4rem;
-    margin-left: 2rem;
-    &__titulo {
-        padding-bottom: 1rem;
-    }
-    &__imagen {
-    background-image: url(../recursos/mundial-en-verano.webp);
-    height: 20rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    }
-    &__parrafo {
-        margin-right: 2rem
-    }
-}
-
-.sedes {
-    margin-top: 4rem;
-    margin-left: 2rem;
-    &__titulo {
-        padding-bottom: 1rem;
-    }
-    &__imagen {
-    background-image: url(../recursos/sedes.jpg);
-    height: 20rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    }
-    &__parrafo {
-        margin-right: 2rem
-    }
-}
-
-.carbono {
-    margin-top: 4rem;
-    margin-left: 2rem;
-    &__titulo {
-        padding-bottom: 1rem;
-    }
-    &__imagen {
-        padding-top: 2rem;
-    background-image: url(../recursos/emisiones-carbono-qatar.webp);
-    height: 20rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    }
-    &__parrafo {
-        margin-right: 2rem
-    }
+.grupos {
+    margin-top: 2rem;
+    margin: 2rem;
 }
 
 /* Contactanos */
 .formulario {
-    margin-top: 2rem;
-    padding: 1rem;
-    &__parrafo {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    } 
-    &__boton {
     margin-top: 1rem;
+    margin: 1rem;
+    &__contenedor {
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        max-width: 64rem;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $color-principal;
+        box-shadow: 0 0 0.5rem 0 $color-secundario;
+        border-radius: 1rem;
+    }
+    &__descipcion {
+        border-bottom: solid 0.02in $color-secundario;
+        padding-bottom: 1rem;
+    }
+    &__boton {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: flex-end;
     }
 }
 
+
 /*Media Queries*/
 
-@media (min-width: 721px) and (max-width: 1000px) {
+@media (min-width: 721px) and (max-width: 1000px) {s
     .presentacion {
         grid-template-columns: 1fr;
     }       
@@ -261,10 +232,20 @@ $sizes: (h1:3.125rem, h2:2rem,);
         gap: 0.5rem;
     }
     .entradas {
+        &__grid { 
         display: grid;
         grid-template-columns: 1fr;
+        }
         &__parrafo {
         margin-top: 1rem;
+        }
+    }
+    h1 {
+        margin-left: 1rem;
+    }
+    .formulario {
+        &__contenedor {
+            max-width: 40rem;
         }
     }
 }
@@ -282,10 +263,20 @@ $sizes: (h1:3.125rem, h2:2rem,);
         gap: 0.5rem;
     }
     .entradas {
+        &__grid { 
         display: grid;
         grid-template-columns: 1fr;
+        }
         &__parrafo {
         margin-top: 1rem;
+        }
+    }
+    h1 {
+        margin-left: 1rem;
+    }
+    .formulario {
+        &__contenedor {
+            max-width: 30rem;
         }
     }
 }
@@ -304,10 +295,20 @@ $sizes: (h1:3.125rem, h2:2rem,);
         gap: 0.5rem;
     }     
     .entradas {
+        &__grid { 
         display: grid;
         grid-template-columns: 1fr;
+        }
         &__parrafo {
         margin-top: 1rem;
+        }
+    }
+    h1 {
+        margin-left: 1rem;
+    }
+    .formulario {
+        &__contenedor {
+            max-width: 26rem;
         }
     }
 }

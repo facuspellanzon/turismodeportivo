@@ -14,11 +14,12 @@
 </head>
 
 <body>
-    <header>
+<!-- HEADER -->
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html">
-                    <img src="../recursos/logo-pagina.png" alt="logo-pagina" width="40" height="40">
+                    <img class="header__logo" src="../recursos/logo-pagina.png" alt="logo-pagina">
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +36,7 @@
                         <a href="que-hacer.html">Que Hacer</a>
                         </li>
                         <li class="nav-item">
-                        <a href="curiosidades.html">Curiosidades</a>
+                        <a href="equipos.html">Equipos</a>
                         </li>
                     </ul>
                 </div>
@@ -44,6 +45,7 @@
     </header>
 
     <main>
+<!-- Pasajes Aereos -->
         <section class="seccion__comoIr">
             <h1>Como ir a la Copa del Mundo</h1>
             <p class="presentacion__texto">Al momento de iniciar el viaje es primordial conseguir un pasaje aéreo, un lugar para pasar la noche y entradas para asistir al evento. Qatar por su parte, presenta algunas dificultades de infraestructura y tampoco es fácil llegar hasta el pequeño país de la península arábiga, por lo que a continuación veremos algunas de las opciones más convenientes para poder asistir a esta nueva edición de la Copa Mundial de la FIFA</p>
@@ -96,6 +98,28 @@
                 </div>
             </div>
         </section>
+
+<!-- Entradas -->
+        <section  class="entradas">
+            <h2 class="entradas__titulo" data-aos="fade-right">Entradas</h2>
+            <article class="entradas__grid">
+                <div>
+                    <img class="entradas__imagen" src="../recursos/hinchas-argentinos.webp" alt="Hinchas Argentinos en Rusia 2018" data-aos="fade-right">
+                </div>
+                <div class="entradas__parrafo" data-aos="fade-left">
+                    <p>Cada torneo la Argentina es uno de los países que más entradas solicita para el mundial, por lo que conseguir entradas para uno de los partidos puede ser una verdadera hazaña. <br>
+                    <br>
+                    La mejor forma de poder adquirir un ticket es a través de la página oficial de la FIFA. Actualmente nos encontramos en la segunda fase del período de ventas en la que se escogerán ganadores por sorteo entre todos los que manifiesten intención de compra. La organización ha anunciado que luego pasará a una tercera y última fase de venta en la que el primero en llegar será el primero en servirse. <br>
+                    <br>
+                    ¿Qué pasa si no pude adquirir ningún boleto por este método? <br>
+                    Hay dos opciones de último minuto. Para aquellos menos arriesgados, se pueden adquirir entradas a través de algún revendedor confiable como Viagogo. El precio de las entradas será desde luego mayor a las oficiales. Para los demás, si bien no se anuncia por ningún medio oficial, FIFA no suele vender todos los boletos disponibles, sino que se guarda un remanente que pone a disposición en su plataforma algunas horas antes del partido. Por lo que para quién se atreva, puede ir a Qatar sin entradas y estar atento a la web oficial para intentar conseguir una momentos previos al partido.</p>
+                    <a href="https://www.fifa.com/es/tournaments/mens/worldcup/qatar2022/tickets" class="btn btn-light">FIFA Pagina Oficial</a>
+                    <a href="https://www.viagogo.com/ar/Entradas-Deportes/Futbol/Football-World-Cup-2022-Entradas" class="btn btn-light">Viagogo</a>
+                </div>
+            </article>
+        </section>
+        
+<!-- Alojamiento -->
         <section class="seccion__comoIr">
             <div>
                 <h2 data-aos="fade-right"> Alojamiento</h2>
@@ -149,26 +173,8 @@
                 </div>
             </article>
         </section>
-        <section class="seccion__comoIr">
-            <h2 data-aos="fade-right">Entradas</h2>
-            <article class="entradas">
-                <div>
-                    <img class="entradas__imagen" src="../recursos/hinchas-argentinos.webp" alt="Hinchas Argentinos en Rusia 2018" data-aos="fade-right">
-                </div>
-                <div class="entradas__parrafo" data-aos="fade-left">
-                    <p>Cada torneo la Argentina es uno de los países que más entradas solicita para el mundial, por lo que conseguir entradas para uno de los partidos puede ser una verdadera hazaña. <br>
-                    <br>
-                    La mejor forma de poder adquirir un ticket es a través de la página oficial de la FIFA. Actualmente nos encontramos en la segunda fase del período de ventas en la que se escogerán ganadores por sorteo entre todos los que manifiesten intención de compra. La organización ha anunciado que luego pasará a una tercera y última fase de venta en la que el primero en llegar será el primero en servirse. <br>
-                    <br>
-                    ¿Qué pasa si no pude adquirir ningún boleto por este método? <br>
-                    Hay dos opciones de último minuto. Para aquellos menos arriesgados, se pueden adquirir entradas a través de algún revendedor confiable como Viagogo. El precio de las entradas será desde luego mayor a las oficiales. Para los demás, si bien no se anuncia por ningún medio oficial, FIFA no suele vender todos los boletos disponibles, sino que se guarda un remanente que pone a disposición en su plataforma algunas horas antes del partido. Por lo que para quién se atreva, puede ir a Qatar sin entradas y estar atento a la web oficial para intentar conseguir una momentos previos al partido.</p>
-                    <a href="https://www.fifa.com/es/tournaments/mens/worldcup/qatar2022/tickets" class="btn btn-light">FIFA Pagina Oficial</a>
-                    <a href="https://www.viagogo.com/ar/Entradas-Deportes/Futbol/Football-World-Cup-2022-Entradas" class="btn btn-light">Viagogo</a>
-                </div>
-            </article>
-        </section>
     </main>
- 
+<!-- FOOTER -->
     <footer class="footer__grid">
         <div class="footer__derechos">
             <p>Todos los derechos reservados</p>

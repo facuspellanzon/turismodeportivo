@@ -1,8 +1,11 @@
-header{
+.header{
     background-color: $color-secundario;
-    position: sticky;
     top: 0.05rem;
     z-index: 10;
+    &__logo {
+        width: 2.5rem;
+        height: 2.5rem;  
+    }
     li {
     padding: 0.8rem;
     }
@@ -13,6 +16,6 @@ header{
     }
         a:hover {
         color:$color-terciario;
-        text-decoration: underline;
+        transition: .5s cubic-bezier(0, 0, 0, 1);
         }
 }
